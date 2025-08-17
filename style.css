@@ -1,0 +1,132 @@
+/* Import font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset dasar dan gaya body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Kontainer utama aplikasi */
+#app-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1a237e;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Grup input (label + input/textarea) */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #3f51b5;
+    box-shadow: 0 0 5px rgba(63, 81, 181, 0.5);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Styling khusus untuk bagian pengaturan kunci */
+#key-setup {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+#key-setup label {
+    flex-shrink: 0;
+}
+#key-setup input {
+    text-align: center;
+}
+#key-setup span {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* Styling untuk grup tombol */
+#button-group {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    flex-grow: 1;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+#encryptBtn {
+    background-color: #3f51b5;
+    color: white;
+}
+#encryptBtn:hover {
+    background-color: #303f9f;
+}
+
+#decryptBtn {
+    background-color: #5e35b1;
+    color: white;
+}
+#decryptBtn:hover {
+    background-color: #4527a0;
+}
+
+/* Textarea output */
+#outputText {
+    background-color: #e8eaf6;
+    color: #1a237e;
+    font-weight: 600;
+}

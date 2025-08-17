@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alat Enkripsi Bahasa Panda</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div id="app-container">
+        <h1>Alat Enkripsi Bahasa Panda 🐼</h1>
+        
+        <div class="input-group" id="key-setup">
+            <label for="refLetterInput">Atur Kunci:</label>
+            <input type="text" id="refLetterInput" placeholder="Huruf (A-Z)" maxlength="1">
+            <span>=</span>
+            <input type="number" id="targetNumberInput" min="1" max="26" value="1">
+        </div>
+        
+        <div class="input-group">
+            <label for="inputText">Masukkan Teks:</label>
+            <textarea id="inputText" rows="6" placeholder="Ketik kalimat yang ingin diubah di sini..."></textarea>
+        </div>
+        
+        <div id="button-group">
+            <button id="encryptBtn">Enkripsi (Ubah ke Kode)</button>
+            <button id="decryptBtn">Dekripsi (Ubah ke Teks Asli)</button>
+        </div>
+        
+        <div class="input-group">
+            <label for="outputText">Hasil:</label>
+            <textarea id="outputText" rows="6" readonly placeholder="Hasil akan muncul di sini..."></textarea>
+        </div>
+    </div>
+
+</body>
+</html>
